@@ -69,9 +69,9 @@ export default function TestimonialSection() {
         >
           <div style={{ transform: `translateY(${parallaxY}px)`, transition: 'transform 0.1s linear', willChange: 'transform' }}>
             <img
-              src="/abhishek.jpg"
+              src="/abhishek-portrait.jpg"
               alt="Abhishek Gautam"
-              className="w-full max-w-xs rounded-2xl shadow-lg object-cover"
+              className="w-full max-w-xs rounded-2xl shadow-lg object-cover bg-[#0A0E27]"
             />
           </div>
         </div>
