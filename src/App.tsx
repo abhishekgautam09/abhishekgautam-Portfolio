@@ -5,6 +5,7 @@ import TestimonialSection from './components/TestimonialSection';
 import PricingSection from './components/PricingSection';
 import TestimonialCarousel from './components/TestimonialCarousel';
 import ProjectsSection from './components/ProjectsSection';
+import ArticlesSection from './components/ArticlesSection';
 import PartnerSection from './components/PartnerSection';
 import Footer from './components/Footer';
 import CopyrightBar from './components/CopyrightBar';
@@ -111,6 +112,7 @@ export default function App() {
       <div id="work">
         <ProjectsSection />
       </div>
+      <ArticlesSection />
       <PartnerSection />
       <Footer />
       <CopyrightBar />
