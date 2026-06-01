@@ -33,7 +33,7 @@ function HeroSection() {
     <section className="flex flex-col items-center px-6 pt-12 md:pt-16" ref={ref}>
       <div className="max-w-[440px] w-full">
         <h1
-          className={`font-serif text-[32px] md:text-[40px] lg:text-[44px] font-semibold text-[#0A0E27] tracking-tight mb-4 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
+          className={`text-[32px] md:text-[40px] lg:text-[44px] font-semibold text-[#0A0E27] tracking-tight mb-4 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
           style={delay(0.1)}
         >
           Abhishek Gautam
@@ -50,8 +50,8 @@ function HeroSection() {
           className={`text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0F1738] tracking-tight ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
           style={delay(0.3)}
         >
-          I design UX where<br />
-          <span className="font-serif text-[#1E40E0]">complexity hides.</span>
+          Designing <span className="text-[#1E40E0]">calm UX</span><br />
+          for complex systems
         </h2>
 
         <div

@@ -73,7 +73,7 @@ export default function PartnerSection() {
         onMouseMove={handleMouseMove}
       >
         <h2
-          className={`font-serif text-[48px] md:text-[64px] lg:text-[80px] text-[#0F1738] tracking-tight mb-12 text-center relative z-20 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
+          className={`text-[48px] md:text-[64px] lg:text-[80px] font-semibold text-[#0F1738] tracking-tight mb-12 text-center relative z-20 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
         >
           Let's work together
         </h2>

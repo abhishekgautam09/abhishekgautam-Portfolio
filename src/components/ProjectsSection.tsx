@@ -88,7 +88,7 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: n
       </div>
       <div className="flex items-start justify-between gap-3">
         <div>
-          <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#0A0E27]">{project.name}</h3>
+          <h3 className="text-xl md:text-2xl font-semibold text-[#0A0E27]">{project.name}</h3>
           <p className="text-sm text-[#0A0E27]/60 mt-1">{project.category}</p>
         </div>
         <ArrowUpRight className="w-5 h-5 text-[#0A0E27] mt-1 flex-shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -102,7 +102,7 @@ export default function ProjectsSection() {
     <section className="max-w-[1200px] mx-auto px-6 py-12">
       <div className="flex items-center justify-between mb-10">
         <h2 className="text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0F1738] tracking-tight">
-          Selected <span className="font-serif text-[#1E40E0]">work</span>
+          Selected <span className="text-[#1E40E0]">work</span>
         </h2>
         <a
           href="https://www.behance.net/designabhishekgautam"

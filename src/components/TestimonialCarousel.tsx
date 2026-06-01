@@ -69,7 +69,7 @@ export default function TestimonialCarousel() {
       <div className="px-6 mb-10">
         <div className="md:max-w-4xl md:ml-auto flex items-center justify-between">
           <h2 className="text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0F1738] tracking-tight">
-            What <span className="font-serif text-[#1E40E0]">builders</span> say
+            What <span className="text-[#1E40E0]">builders</span> say
           </h2>
           <div className="flex items-center gap-2">
             <div className="flex">

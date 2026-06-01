@@ -43,7 +43,7 @@ export default function TestimonialSection() {
           style={delay(0.2)}
         >
           He never limited himself to design execution — he thought like a{' '}
-          <span className="font-serif text-[#1E40E0]">product</span>{' '}person.
+          <span className="text-[#1E40E0]">product</span>{' '}person.
         </h2>
 
         <p

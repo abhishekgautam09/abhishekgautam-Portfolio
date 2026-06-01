@@ -27,7 +27,7 @@ export default function ArticlesSection() {
     <section className="max-w-[1200px] mx-auto px-6 py-12" ref={ref}>
       <div className="flex items-center justify-between mb-10">
         <h2 className="text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0F1738] tracking-tight">
-          <span className="font-serif text-[#1E40E0]">Writing</span>
+          <span className="text-[#1E40E0]">Writing</span>
         </h2>
         <a
           href="https://medium.com/@designabhishekgautam"
