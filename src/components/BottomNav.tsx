@@ -1,6 +1,6 @@
 import Button from './Button';
 
-const shadowNav = '0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.08), 0 0 0 0.5px rgba(0,0,0,0.04)';
+const shadowNav = '0 8px 32px rgba(10,14,39,0.14), 0 2px 8px rgba(10,14,39,0.10), 0 0 0 0.5px rgba(10,14,39,0.05)';
 
 export default function BottomNav() {
   return (

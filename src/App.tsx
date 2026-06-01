@@ -92,7 +92,7 @@ function MarqueeSection() {
             key={i}
             src={src}
             alt=""
-            className="h-[280px] md:h-[500px] object-cover mx-3 rounded-2xl shadow-lg flex-shrink-0"
+            className="h-[280px] md:h-[500px] object-cover mx-3 rounded-2xl shadow-brand-lg flex-shrink-0"
             style={{ width: 'auto' }}
           />
         ))}

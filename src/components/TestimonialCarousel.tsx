@@ -101,7 +101,7 @@ export default function TestimonialCarousel() {
               className="flex-shrink-0 bg-white rounded-[32px] md:rounded-[40px] px-6 md:pl-10 md:pr-24 py-8"
               style={{
                 width: cardWidth,
-                boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
+                boxShadow: '0 4px 16px rgba(10,14,39,0.08)',
               }}
             >
               <svg width="28" height="22" viewBox="0 0 28 22" fill="none" className="mb-4 text-[#0A0E27]">

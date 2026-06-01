@@ -44,7 +44,7 @@ export default function PricingSection() {
           className={`rounded-[40px] pl-10 pr-10 md:pr-24 pt-3 pb-10 bg-white ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
           style={{
             ...delay(0.2),
-            boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
+            boxShadow: '0 4px 16px rgba(10,14,39,0.08)',
           }}
         >
           <p className="text-[#0A0E27]/40 text-xs font-mono mt-4 mb-6">02</p>

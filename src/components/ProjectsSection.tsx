@@ -78,7 +78,7 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: n
       className={`group flex flex-col gap-3 ${visible ? 'animate-fade-in-up' : 'opacity-0'}`}
       style={visible ? { animationDelay: `${(index % 2) * 0.1}s` } : {}}
     >
-      <div className="overflow-hidden rounded-2xl shadow-lg bg-gray-100">
+      <div className="overflow-hidden rounded-2xl shadow-brand-lg bg-gray-100">
         <img
           src={project.image}
           alt={project.name}

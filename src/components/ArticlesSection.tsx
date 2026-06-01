@@ -49,7 +49,7 @@ export default function ArticlesSection() {
             className={`group flex flex-col bg-white rounded-[32px] p-8 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
             style={{
               ...(inView ? { animationDelay: `${(i + 1) * 0.1}s` } : {}),
-              boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
+              boxShadow: '0 4px 16px rgba(10,14,39,0.08)',
             }}
           >
             <div className="flex items-center gap-2 mb-4">

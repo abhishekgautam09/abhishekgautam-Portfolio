@@ -71,7 +71,7 @@ export default function TestimonialSection() {
             <img
               src="/abhishek-portrait.jpg"
               alt="Abhishek Gautam"
-              className="w-full max-w-xs rounded-2xl shadow-lg object-cover bg-[#0A0E27]"
+              className="w-full max-w-xs rounded-2xl shadow-brand-lg object-cover bg-[#0A0E27]"
             />
           </div>
         </div>

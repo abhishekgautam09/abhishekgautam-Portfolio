@@ -47,7 +47,7 @@ export default function PartnerSection() {
       opacity: 1;
       transition: opacity 1000ms ease, transform 1000ms ease;
       z-index: 10;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 24px rgba(10,14,39,0.18);
     `;
     container.appendChild(img);
 
@@ -69,7 +69,7 @@ export default function PartnerSection() {
           (containerRef as React.MutableRefObject<HTMLDivElement | null>).current = el;
         }}
         className="max-w-7xl mx-auto py-48 rounded-[40px] flex flex-col items-center justify-center relative overflow-hidden cursor-crosshair"
-        style={{ boxShadow: '0 4px 30px rgba(0,0,0,0.06)' }}
+        style={{ boxShadow: '0 4px 30px rgba(10,14,39,0.08)' }}
         onMouseMove={handleMouseMove}
       >
         <h2
