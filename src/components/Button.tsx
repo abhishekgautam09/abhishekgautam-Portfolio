@@ -1,0 +1,42 @@
+﻿import React from 'react';
+
+type Variant = 'primary' | 'secondary' | 'tertiary';
+
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: Variant;
+  children: React.ReactNode;
+  href?: string;
+}
+
+const shadowPrimary =
+  '0 1px 2px 0 rgba(5,26,36,0.1), 0 4px 4px 0 rgba(5,26,36,0.09), 0 9px 6px 0 rgba(5,26,36,0.05), 0 17px 7px 0 rgba(5,26,36,0.01), 0 26px 7px 0 rgba(5,26,36,0), inset 0 2px 8px 0 rgba(255,255,255,0.5)';
+const shadowSecondary = '0 0 0 0.5px rgba(0,0,0,0.05), 0 4px 30px rgba(0,0,0,0.08)';
+
+export default function Button({ variant = 'primary', children, href, className = '', ...props }: ButtonProps) {
+  const base = 'inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-medium transition-opacity hover:opacity-90 cursor-pointer';
+
+  const styles: Record<Variant, React.CSSProperties> = {
+    primary: { background: '#051A24', color: '#fff', boxShadow: shadowPrimary },
+    secondary: { background: '#fff', color: '#051A24', boxShadow: shadowSecondary },
+    tertiary: { background: '#fff', color: '#051A24', boxShadow: shadowPrimary },
+  };
+
+  const el = (
+    <button
+      style={styles[variant]}
+      className={`${base} ${className}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+
+  if (href) {
+    return (
+      <a href={href} target={href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
+        {el}
+      </a>
+    );
+  }
+  return el;
+}
