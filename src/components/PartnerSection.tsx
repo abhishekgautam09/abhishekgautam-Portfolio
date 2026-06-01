@@ -79,7 +79,7 @@ export default function PartnerSection() {
         </h2>
         <div className={`relative z-20 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`} style={inView ? { animationDelay: '0.2s' } : {}}>
           <Button variant="primary" href="mailto:gautam2000abhishek@gmail.com">
-            <span className="w-10 h-10 rounded-full bg-[#F6FCFF] text-[#051A24] flex items-center justify-center text-base font-semibold font-serif">A</span>
+            <img src="/abhishek.jpg" alt="Abhishek Gautam" className="w-10 h-10 rounded-full object-cover" />
             Get in touch with Abhishek
           </Button>
         </div>

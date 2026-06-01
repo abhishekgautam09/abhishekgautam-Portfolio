@@ -69,7 +69,7 @@ export default function TestimonialSection() {
         >
           <div style={{ transform: `translateY(${parallaxY}px)`, transition: 'transform 0.1s linear', willChange: 'transform' }}>
             <img
-              src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260330_103804_7aa5494f-4d5b-432e-9dc7-20715275f143.png&w=1280&q=85"
+              src="/abhishek.jpg"
               alt="Abhishek Gautam"
               className="w-full max-w-xs rounded-2xl shadow-lg object-cover"
             />
