@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef, useState, type CSSProperties } from 'react';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { Quote } from 'lucide-react';
 import { useInViewAnimation } from '../hooks/useInViewAnimation';
 
@@ -39,15 +39,15 @@ export default function TestimonialSection() {
         </div>
 
         <h2
-          className={`text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0D212C] tracking-tight mb-4 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
+          className={`text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0F1738] tracking-tight mb-4 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
           style={delay(0.2)}
         >
           He never limited himself to design execution — he thought like a{' '}
-          <span className="font-serif">product</span>{' '}person.
+          <span className="font-serif text-[#1E40E0]">product</span>{' '}person.
         </h2>
 
         <p
-          className={`italic text-sm text-[#273C46] mb-8 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
+          className={`italic text-sm text-[#5B6480] mb-8 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
           style={delay(0.3)}
         >
           Deepak Kumar — worked with Abhishek at Altstac Technologies

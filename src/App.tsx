@@ -1,4 +1,4 @@
-﻿import { type CSSProperties } from 'react';
+import { type CSSProperties } from 'react';
 import { useInViewAnimation } from './hooks/useInViewAnimation';
 import Button from './components/Button';
 import TestimonialSection from './components/TestimonialSection';
@@ -33,29 +33,29 @@ function HeroSection() {
     <section className="flex flex-col items-center px-6 pt-12 md:pt-16" ref={ref}>
       <div className="max-w-[440px] w-full">
         <h1
-          className={`font-serif text-[32px] md:text-[40px] lg:text-[44px] font-semibold text-[#051A24] tracking-tight mb-4 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
+          className={`font-serif text-[32px] md:text-[40px] lg:text-[44px] font-semibold text-[#0A0E27] tracking-tight mb-4 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
           style={delay(0.1)}
         >
           Abhishek Gautam
         </h1>
 
         <p
-          className={`font-mono text-xs md:text-sm text-[#051A24] mb-2 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
+          className={`font-mono text-xs md:text-sm text-[#0A0E27] mb-2 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
           style={delay(0.2)}
         >
           UX Designer · Bengaluru, India
         </p>
 
         <h2
-          className={`text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0D212C] tracking-tight ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
+          className={`text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0F1738] tracking-tight ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
           style={delay(0.3)}
         >
           I design UX where<br />
-          <span className="font-serif">complexity hides.</span>
+          <span className="font-serif text-[#1E40E0]">complexity hides.</span>
         </h2>
 
         <div
-          className={`flex flex-col gap-6 mt-5 md:mt-6 text-sm md:text-base text-[#051A24] leading-relaxed ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
+          className={`flex flex-col gap-6 mt-5 md:mt-6 text-sm md:text-base text-[#0A0E27] leading-relaxed ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}
           style={delay(0.4)}
         >
           <p>

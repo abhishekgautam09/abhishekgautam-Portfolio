@@ -26,14 +26,14 @@ export default function ArticlesSection() {
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-12" ref={ref}>
       <div className="flex items-center justify-between mb-10">
-        <h2 className="text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0D212C] tracking-tight">
-          <span className="font-serif">Writing</span>
+        <h2 className="text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0F1738] tracking-tight">
+          <span className="font-serif text-[#1E40E0]">Writing</span>
         </h2>
         <a
           href="https://medium.com/@designabhishekgautam"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden sm:inline-flex items-center gap-1 text-sm text-[#051A24] hover:opacity-70 transition-opacity"
+          className="hidden sm:inline-flex items-center gap-1 text-sm text-[#0A0E27] hover:opacity-70 transition-opacity"
         >
           Read all on Medium <ArrowUpRight className="w-4 h-4" />
         </a>
@@ -56,21 +56,21 @@ export default function ArticlesSection() {
               {article.tags.map(tag => (
                 <span
                   key={tag}
-                  className="text-xs font-mono text-[#051A24]/60 border border-[#0D212C]/15 rounded-full px-3 py-1"
+                  className="text-xs font-mono text-[#0A0E27]/60 border border-[#0F1738]/15 rounded-full px-3 py-1"
                 >
                   {tag}
                 </span>
               ))}
             </div>
-            <h3 className="text-xl md:text-2xl leading-snug text-[#0D212C] tracking-tight mb-3">
+            <h3 className="text-xl md:text-2xl leading-snug text-[#0F1738] tracking-tight mb-3">
               {article.title}
             </h3>
-            <p className="text-sm md:text-base text-[#051A24]/70 leading-relaxed mb-6 flex-1">
+            <p className="text-sm md:text-base text-[#0A0E27]/70 leading-relaxed mb-6 flex-1">
               {article.excerpt}
             </p>
             <div className="flex items-center justify-between">
-              <span className="text-sm text-[#273C46]">{article.date}</span>
-              <span className="inline-flex items-center gap-1 text-sm font-medium text-[#051A24]">
+              <span className="text-sm text-[#5B6480]">{article.date}</span>
+              <span className="inline-flex items-center gap-1 text-sm font-medium text-[#0A0E27]">
                 Read article
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </span>

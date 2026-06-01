@@ -1,4 +1,4 @@
-﻿import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import Button from './Button';
 
 export default function Footer() {
@@ -9,14 +9,14 @@ export default function Footer() {
           Get in touch
         </Button>
         <div className="flex items-start gap-12">
-          <ArrowUpRight className="w-5 h-5 text-[#051A24] mt-0.5 flex-shrink-0" />
+          <ArrowUpRight className="w-5 h-5 text-[#0A0E27] mt-0.5 flex-shrink-0" />
           <div className="flex gap-12">
             <div className="flex flex-col gap-3">
               {['Work', 'Services', 'About'].map(link => (
                 <a
                   key={link}
                   href={`#${link.toLowerCase()}`}
-                  className="text-base text-[#051A24] hover:opacity-70 transition-opacity"
+                  className="text-base text-[#0A0E27] hover:opacity-70 transition-opacity"
                 >
                   {link}
                 </a>
@@ -33,7 +33,7 @@ export default function Footer() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base text-[#051A24] hover:opacity-70 transition-opacity"
+                  className="text-base text-[#0A0E27] hover:opacity-70 transition-opacity"
                 >
                   {link.label}
                 </a>

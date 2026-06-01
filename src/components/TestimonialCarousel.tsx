@@ -1,4 +1,4 @@
-﻿import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useInViewAnimation } from '../hooks/useInViewAnimation';
 
@@ -68,8 +68,8 @@ export default function TestimonialCarousel() {
     <section className="w-full py-20 overflow-hidden" ref={ref}>
       <div className="px-6 mb-10">
         <div className="md:max-w-4xl md:ml-auto flex items-center justify-between">
-          <h2 className="text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0D212C] tracking-tight">
-            What <span className="font-serif">builders</span> say
+          <h2 className="text-[32px] md:text-[40px] lg:text-[44px] leading-[1.1] text-[#0F1738] tracking-tight">
+            What <span className="font-serif text-[#1E40E0]">builders</span> say
           </h2>
           <div className="flex items-center gap-2">
             <div className="flex">
@@ -77,7 +77,7 @@ export default function TestimonialCarousel() {
                 <Star key={i} className="w-5 h-5 fill-black text-black" />
               ))}
             </div>
-            <span className="text-sm text-[#051A24] font-medium ml-1">Clutch 5/5</span>
+            <span className="text-sm text-[#0A0E27] font-medium ml-1">Clutch 5/5</span>
           </div>
         </div>
       </div>
@@ -104,17 +104,17 @@ export default function TestimonialCarousel() {
                 boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
               }}
             >
-              <svg width="28" height="22" viewBox="0 0 28 22" fill="none" className="mb-4 text-[#051A24]">
+              <svg width="28" height="22" viewBox="0 0 28 22" fill="none" className="mb-4 text-[#0A0E27]">
                 <path d="M0 22V13.4C0 9.8 0.9 6.7 2.7 4C4.5 1.3 7.1 0 10.5 0L12 2.2C9.8 2.2 8 3 6.6 4.6C5.2 6.2 4.5 8.1 4.5 10.4H10.5V22H0ZM15.5 22V13.4C15.5 9.8 16.4 6.7 18.2 4C20 1.3 22.6 0 26 0L27.5 2.2C25.3 2.2 23.5 3 22.1 4.6C20.7 6.2 20 8.1 20 10.4H26V22H15.5Z" fill="currentColor" fillOpacity="0.15"/>
               </svg>
-              <p className="text-base text-[#0D212C] leading-relaxed mb-6">{t.quote}</p>
+              <p className="text-base text-[#0F1738] leading-relaxed mb-6">{t.quote}</p>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-[#051A24] text-[#F6FCFF] flex items-center justify-center text-sm font-semibold flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-[#0A0E27] text-[#F5F8FF] flex items-center justify-center text-sm font-semibold flex-shrink-0">
                   {t.name.split(' ').map(w => w[0]).join('').slice(0, 2)}
                 </div>
                 <div>
-                  <p className="font-semibold text-sm text-[#0D212C]">{t.name}</p>
-                  <p className="text-sm text-[#273C46]">→ {t.role}</p>
+                  <p className="font-semibold text-sm text-[#0F1738]">{t.name}</p>
+                  <p className="text-sm text-[#5B6480]">→ {t.role}</p>
                 </div>
               </div>
             </div>
@@ -125,16 +125,16 @@ export default function TestimonialCarousel() {
           <button
             onClick={prev}
             className="w-12 h-12 rounded-full border flex items-center justify-center hover:bg-gray-50 transition-colors"
-            style={{ borderColor: 'rgba(13,33,44,0.2)' }}
+            style={{ borderColor: 'rgba(15,23,56,0.2)' }}
           >
-            <ChevronLeft className="w-5 h-5 text-[#0D212C]" />
+            <ChevronLeft className="w-5 h-5 text-[#0F1738]" />
           </button>
           <button
             onClick={next}
             className="w-12 h-12 rounded-full border flex items-center justify-center hover:bg-gray-50 transition-colors"
-            style={{ borderColor: 'rgba(13,33,44,0.2)' }}
+            style={{ borderColor: 'rgba(15,23,56,0.2)' }}
           >
-            <ChevronRight className="w-5 h-5 text-[#0D212C]" />
+            <ChevronRight className="w-5 h-5 text-[#0F1738]" />
           </button>
         </div>
       </div>
