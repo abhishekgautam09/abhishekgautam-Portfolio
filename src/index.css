@@ -5,6 +5,35 @@
 @tailwind utilities;
 
 @layer base {
+  /* shadcn/ui tokens — mapped to the Viktor/Abhishek brand palette (HSL) */
+  :root {
+    --background: 0 0% 100%;            /* white */
+    --foreground: 232 59% 10%;          /* #0A0E27 navy */
+    --card: 0 0% 100%;
+    --card-foreground: 232 59% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 232 59% 10%;
+    --primary: 230 76% 50%;             /* #1E40E0 electric blue */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 33% 96%;
+    --secondary-foreground: 232 59% 10%;
+    --muted: 220 33% 96%;
+    --muted-foreground: 225 17% 43%;    /* #5B6480 */
+    --accent: 230 76% 96%;
+    --accent-foreground: 230 76% 50%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 16% 90%;
+    --input: 220 16% 90%;
+    --ring: 230 76% 50%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
   body {
     font-family: 'Inter', 'system-ui', 'sans-serif';
     background-color: #ffffff;
