@@ -1,9 +1,6 @@
 import type { CSSProperties } from 'react';
-import Button from './Button';
+import { Button as UiButton } from './ui/button';
 import { useInViewAnimation } from '../hooks/useInViewAnimation';
-
-const shadowPrimary =
-  '0 1px 2px 0 rgba(10,14,39,0.1), 0 4px 4px 0 rgba(10,14,39,0.09), 0 9px 6px 0 rgba(10,14,39,0.05), 0 17px 7px 0 rgba(10,14,39,0.01), 0 26px 7px 0 rgba(10,14,39,0), inset 0 2px 8px 0 rgba(255,255,255,0.5)';
 
 export default function PricingSection() {
   const { ref, inView } = useInViewAnimation();
@@ -35,7 +32,13 @@ export default function PricingSection() {
             <li>· Usability testing</li>
           </ul>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Button variant="secondary" href="mailto:gautam2000abhishek@gmail.com">Get in touch</Button>
+            <UiButton
+              variant="outline"
+              className="rounded-full h-12 px-7 text-sm border-transparent bg-white text-[#0A0E27] hover:bg-white/90"
+              render={<a href="mailto:gautam2000abhishek@gmail.com" />}
+            >
+              Get in touch
+            </UiButton>
           </div>
         </div>
 
@@ -59,13 +62,13 @@ export default function PricingSection() {
             <li>· Interaction & visual design</li>
             <li>· Prototyping</li>
           </ul>
-          <Button
-            variant="tertiary"
-            href="https://www.behance.net/designabhishekgautam"
-            style={{ boxShadow: shadowPrimary }}
+          <UiButton
+            variant="outline"
+            className="rounded-full h-12 px-7 text-sm shadow-brand-card"
+            render={<a href="https://www.behance.net/designabhishekgautam" target="_blank" rel="noopener noreferrer" />}
           >
             View on Behance
-          </Button>
+          </UiButton>
         </div>
       </div>
     </section>

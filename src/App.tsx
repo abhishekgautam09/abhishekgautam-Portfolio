@@ -1,6 +1,7 @@
 import { type CSSProperties } from 'react';
 import { useInViewAnimation } from './hooks/useInViewAnimation';
 import Button from './components/Button';
+import { Button as UiButton } from './components/ui/button';
 import TestimonialSection from './components/TestimonialSection';
 import PricingSection from './components/PricingSection';
 import TestimonialCarousel from './components/TestimonialCarousel';
@@ -76,7 +77,13 @@ function HeroSection() {
           style={delay(0.5)}
         >
           <Button variant="primary" href="mailto:gautam2000abhishek@gmail.com">Get in touch</Button>
-          <Button variant="secondary" href="#work">View work</Button>
+          <UiButton
+            variant="outline"
+            className="rounded-full h-12 px-7 text-sm shadow-brand-card"
+            render={<a href="#work" />}
+          >
+            View work
+          </UiButton>
         </div>
       </div>
     </section>
